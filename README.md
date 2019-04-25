@@ -8,3 +8,7 @@ Read the tutorial from Google, here: https://developers.google.com/web/updates/2
 - Make sure you have emcc (Emscripten) installed
 - grab libwebp from https://github.com/webmproject/libwebp and place it inside of this directory
 - compile with ```emcc -O3 -s WASM=1 -s ASSERTIONS=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["cwrap"]'     -I libwebp     webp.c     libwebp/src/{dec,dsp,demux,enc,mux,utils}/*.c```
+
+## RUNNING
+- Spin up a server of sorts (thats on you)
+- Client-side in the console, call App() to initiate module
